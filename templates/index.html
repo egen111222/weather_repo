@@ -1,0 +1,22 @@
+{%extends 'layout.html'%}
+
+{%block title%}Головна сторінка{%endblock%}
+
+
+{%block content%}
+<div class="text-center w-50 container">
+	<h1 class="mb-3 display-3">Головна</h1>
+
+	<form action="/weather" method="POST">
+		<div class="form-floating mb-3">
+		  <input type="text" class="form-control" id="floatingInput" placeholder="Введіть назву маста" name="city_name">
+		  <label for="floatingInput">Назва міста</label>
+		</div>
+		<button class="btn btn-success">Дізнатись погоду</button>
+
+	</form>
+
+</div>
+
+
+{%endblock%}
